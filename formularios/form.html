@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>form</title>
+    <title>Form</title>
+
 </head>
 <body>
     <div id="topo" >
@@ -15,7 +16,7 @@
             <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/principal/principal.html">Home </a>
+                    <a class="nav-link" href="../principal/principal.html">Home </a>
                   </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../produto/produto.html">Produto</a>
@@ -31,188 +32,244 @@
         </div>
 
 
-        <header>
-            <nav class="navbar navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Imperio Bebidas</a>
-                <button type="button" class="btn btn-primary">Continuar Comprando</button>
-            </nav>
-        </header>
-       
+               <!-- CADASTRO DE PRODUTOS-->
+  
 
-        <main class="container">
-            <form id="checkout" class="row mt-4">
-                <div class="col-md-4">
-                    <header class="bg-dark text-light p-2">
-                        Dados Pessoais
-                    </header>
-                    <div class="p-2">
-                        <label for="nomeUsuario">Nome completo</label>
-                        <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome completo">
-                        
-                    </div>
-                    <div class="p-2">
-                        <label for="cpf">CPF</label>
-                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
-                    </div>
-                    <div class="p-2">
-                        <label for="telefone">Telefone</label>
-                        <input class="form-control" type="number" id="telefone" name="telefone" placeholder="Digite Seu Telefone ">
-                    </div>
-                    <div class="p-2">
-                        <label for="email">Email</label>
-                        <input class="form-control" type="email" id="email" name="email" placeholder="Digite Seu Email">
-                    </div>
-                    <div class="p-2">
-                        <label for="senha">Senha</label>
-                        <input class="form-control" type="password" id="password" name="password" placeholder="Digite Sua Senha">
-                    </div>
-                    <div class="p-2">
-                        <label for="comfirme">Comfirme Sua Senha</label>
-                        <input class="form-control" type="password" id="comfirme" name="comfirme" placeholder="Comfirme Sua Senha">
-                    </div>
-                    
-            
-
-                </div>
-                <div class="col-md-4">
-                    <header class="bg-dark text-light p-2">
-                        Entrega
-                    </header>
-                    <div class="p-2">
-                        <label for="cep">CEP</label>
-                        <input class="form-control" type="number" id="cep" name="cep" placeholder="Digite seu CEP">
-                        
-                    </div>
-                    <div class="p-2">
-                        <label for="endereco">Endereço</label>
-                        <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço">
-                    </div>
-                    <div class="p-2">
-                        <label for="numero">Numero</label>
-                        <input class="form-control" type="number" id="numero" name="numero" placeholder="Digite Seu Numero ">
-                    </div>
-                    <div class="p-2">
-                        <label for="complemento">Complemento</label>
-                        <input class="form-control" type="text" id="complemento" name="complemento" placeholder="Complemento">
-                    </div>
-                    <div class="p-2">
-                        <label for="bairro">Bairro</label>
-                        <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Bairro">
-                    </div>
-                    <div class="p-2 row">
-                        <div class="col-6">
-                                <label for="cidade">Cidade</label>
-                                <input class="form-control" type="text" id="cidade" name="cidadeUsuario" placeholder="Cidade"> 
-                        </div>
-                                <div class="col-6">
-                                    <label for="estado">Estado</label>
-                                <select class="form-control">
-                                    
-                                    <option value="" disabled> estado</option>
-                                    <option value="SP">SP</option>
-                                    <option value="RJ">RJ</option>
-                                </select>
-                                </div>
-
-                        </div>
-
-                        <div class="p-2 row">
-                            <div class="col-6">
-                            <label for="freteRapido">Frete rapido - R$ 50,00</label>
-                            <input type="radio" name="frete" id="freteRapido">
-                            </div>
-
-                            <div class="col-6">
-                            <label for="freteNormal">Frete Normal - R$ 20,00</label>
-                            <input type="radio" name="frete" id="freteNormal">
-    
-                           </div>
-                        </div>
-                        
-                      
-                    </div>
-
-                    
-                <div class="col-md-4">
-                    <header class="bg-dark text-light p-2">
-                        Pagamento
-                    </header>
-
-                    <div class="d-flex justify-content-center flex-column p-0">
-                        <img src="/img/bebida4.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">produto</h5>
-                          <p class="card-text">R$ 45,00</p>
-                    
-
-                        </div>
-
-                    <div class="p-2">
-                        <label for="numeroCartao">Numero cartão</label>
-                        <input class="form-control" type="text" id="numeroCartao" name="numeroCartao" placeholder="Digite o numero do cartão">
-                    </div>
-
-                    <div class="p-2 row">
-
-                    <div class="col-6">
-                        <label for="validade">Data De Validade</label>
-                        <input class="form-control" type="month" id="validade" name="validade" placeholder="Validade"> 
-                </div>
-                        <div class="col-6">
-                            <label for="CodigoSeguranca">CVV</label>
-                            <input class="form-control" type="number" id="CodigoSeguranca" name="CodigoSeguranca" placeholder="CVV"> 
-                        
-                        </div>
-
-                </div>
+               <form nome="cadastrodeproduto" action="exemplo.java" method="POST">  
+      
+                <fieldset>
+                  
+                    <div id="cadastr1" class="container p-3 my-3 border">
+                    <h1>Cadastro De Produtos</h1>
                 
-                <div class="p-2">
-                    <label for="titular">Nome do titular</label>
-                    <input class="form-control" type="text" id="titular" name="titular" placeholder="Nome do titular">
-                </div>
-                <div class="p-2">
-                    <label for="cpfTitular">CPF Do Titular</label>
-                    <input class="form-control" type="text" id="cpfTitular" name="cpfTitular" placeholder="CPF Do Titular">
-                </div>
-                <div class="d-flex justify-content-center "></div>
-                <button class="btn- btn-success" type="button"
-                data-toggle="modal" 
-                data-target="#comprafinalizada"> Finalizar Compra</button>
-                
+                    <table cellspacing="10">
+                            <tr>
+                            <td>
+                                <label id="produto" for="produto">Produto: </label>
+                            </td>
+                            <td>
+                                <input type="text" name="nome"  maxlength="25">
+                            </td>
+                        
+                            <tr>
+                            <td>
+                                <label id="validade" >Validade: </label>
+                            </td>
 
-                </div>
+                            <td>
+                                <input type="date" size="4">
+                            
+                            </td>
 
-                    
-        
+                            </tr>
+                            <tr>
+                            <td>
+                                <label id="codigo" for="codigo">Codigo: </label>
+                            </td>
+                            <td>
+                                <input type="number" name="codigo" size="13" maxlength="13"> 
+                            </td>
+                            </tr>
+                        
+                            <tr>
+                            <td>         
+                                <label id="descricao" >Descrição:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="descricao" size="20" maxlength="20">
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <label id="quantidade" for="quantidade">Quantidade: </label>
+                                </td>
+                                <td>
+                                <input type="number" name="nome"  maxlength="6">
+                                </td>
+                            <tr>
+                                <td>
+                                <label id="valor">Valor:</label>
+                                </td>
+                                <td>
+                                <input type="number" name="valor" size="20" maxlength="8">
+                                </td>
+                            </tr>
+                    </table>
+                <br>
+                <br>
+                        <input type="submit">
+                        <input type="reset" value="Limpar">
                 </div>
-                   
-            </form>
-        </main>
-
-
-
-        <div id="comprafinalizada" class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Compr realizada com sucesso!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>parabens pela sua compra</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">beleza</button>
-                  <button type="button" class="btn btn-primary" > Finalizar compra</button>
-                </div>
-              </div>
-            </div>
-          </div>
+                </fieldset>
+            </form>       
           
-          <br>
-          <br>
+                            <!--  CADASTRO DE FORNECEDORES -->
+
+            <form nome="cadastrodefonecedores" action="exemplo.java" method="POST">                       
+                    <fieldset>
+                        
+                        <div id="cadastr2" class="container p-3 my-3  border">
+                            <h1>Cadastro De Fornecedores</h1>
+                                    
+                            <table cellspacing="50">
+                                
+                                    <tr>
+                                        <td>
+                                            <label id="empresa" for="empresa">Empresa: </label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="empresa"  maxlength="30">
+                                        </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td>
+                                            <label id="cnpj" for="cnpj">CNPJ: </label>
+                                        </td>
+                                        <td>
+                                            <input type="number" name="cnpj"  maxlength="16">
+                                        </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        <td>
+                                            <label id="telefone" for="telefone">Telefone: </label>
+                                        </td>
+                                        <td>
+                                            <input type="tel" name="telefone">
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        
+                                            <td>
+                                            <label id="email" for="email">E-mail: </label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="email">
+                                        </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        <td>
+                                        <label id="rua" for="rua">Rua:</label>
+                                        </td>
+                                        <td>
+                                        <input type="text" name="rua">
+                                        </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td>
+                                        <label id="numero" for="numero">Numero:</label>
+                                        </td>
+                                        <td>
+                                        <input type="number" name="numero" size="4">
+                                        </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        <td>
+                                        <label id="bairro" for="bairro">Bairro: </label>
+                                        </td>
+                                        <td>
+                                        <input type="text" name="bairro">
+                                        </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        <td>
+                                        <label id="estado" for="estado">Estado:</label>
+                                        </td>
+                                        <td>
+                                    
+                                        <select name="estado">
+                                        <option value="" disabled selected>Estado</option>     
+                                        <option value="ac">Acre</option> 
+                                        <option value="al">Alagoas</option> 
+                                        <option value="am">Amazonas</option> 
+                                        <option value="ap">Amapá</option> 
+                                        <option value="ba">Bahia</option> 
+                                        <option value="ce">Ceará</option> 
+                                        <option value="df">Distrito Federal</option> 
+                                        <option value="es">Espírito Santo</option> 
+                                        <option value="go">Goiás</option> 
+                                        <option value="ma">Maranhão</option> 
+                                        <option value="mt">Mato Grosso</option> 
+                                        <option value="ms">Mato Grosso do Sul</option> 
+                                        <option value="mg">Minas Gerais</option> 
+                                        <option value="pa">Pará</option> 
+                                        <option value="pb">Paraíba</option> 
+                                        <option value="pr">Paraná</option> 
+                                        <option value="pe">Pernambuco</option> 
+                                        <option value="pi">Piauí</option> 
+                                        <option value="rj">Rio de Janeiro</option> 
+                                        <option value="rn">Rio Grande do Norte</option> 
+                                        <option value="ro">Rondônia</option> 
+                                        <option value="rs">Rio Grande do Sul</option> 
+                                        <option value="rr">Roraima</option> 
+                                        <option value="sc">Santa Catarina</option> 
+                                        <option value="se">Sergipe</option> 
+                                        <option value="sp">São Paulo</option> 
+                                        <option value="to">Tocantins</option> 
+                                        </select>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                        <label id="cidade" for="cidade">Cidade: </label>
+                                        </td>
+                                        <td>
+                                        <input type="text" name="cidade">
+                                        </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        <td>
+                                        <label id="cep" for="cep">CEP: </label>
+                                        </td>
+                                        <td>
+                                        <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+                                        </td>
+                                        </tr>
+                                    
+                                </table>
+                                                            
+                                    <br>
+                                    <br>
+                                
+                                    <input type="submit" >
+                                <input type="reset" value="Limpar">
+                 </div>            
+                </fieldset>
+            </form>    
+   <br />
+
+
+                             <!-- CONSULTA -->
+       <form nome="consultardados" action="exemplo.java" method="POST">    
+            <div id="cadastr3" class="container p-3 my-3  border">
+                <h1>Consulta De Dados</h1>
+                        
+            <div class="container mt-6">
+                    <h6>Tipo de dados clientes, produtos, fornecedores etc:</h6>
+                    
+                    <input class="form-control" id="myInput" type="text" placeholder="Search.."  maxlength="20">
+
+                    <br>
+                    <ul class="list-group" id="myList">
+                    <li class="list-group-item">Produto</li>
+                    <li class="list-group-item">Fornecedor</li>
+                    <li class="list-group-item">Cliente</li>
+                    <li class="list-group-item">Outros</li>
+                    </ul> 
+                    <br>
+                    <input type="submit">
+                    <input type="reset" value="Limpar">
+                
+                </div>
+
+            </div> 
+       </form>    
 
 
     <footer id="rodape" class="text-center">
@@ -222,3 +279,4 @@
       </footer>
 </body>
 </html>
+
